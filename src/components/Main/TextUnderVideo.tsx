@@ -19,7 +19,7 @@ const TextUnderVideo = () => {
           success!
         </p>
         <div className="bg-[#ff5a00] text-white w-fit space-y-3 rounded-2xl py-7 px-4">
-          <h4 className="text-3xl  font-bold">₦ 300,000</h4>
+          <h4 className="text-3xl  font-bold">₦ 250,000</h4>
           <p className="text-7xl animate-pulse">🎉</p>
           <p className="text-lg tracking-wide ">Winner</p>
         </div>

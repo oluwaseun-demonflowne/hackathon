@@ -118,7 +118,7 @@ const MobileNav = () => {
     }
   }, [openDrawer]);
   return (
-    <div className=" z-[99]  fixed top-0 w-[100%] md:hidden shadow-lg bg-[#F5F4E2] flex px-4 items-center justify-between h-20 ">
+    <div className=" z-[99]  fixed top-0 w-[100%] md:hidden shadow-lg bg-white flex px-4 items-center justify-between h-20 ">
       <Link href="#home">
         <div className="flex gap-3 items-center">
           <GiCrackedAlienSkull className="text-4xl" />
