@@ -40,8 +40,8 @@ const DesktopNav = () => {
     });
   }, []);
   return (
-    <div className="bg-[#F5F4E2] flex  items-center text-[#3c3b3a] w-[100%] shadow-lg z-30 fixed top-0">
-      <header className="py-6 px-20">
+    <div className="bg-[#F5F4E2] py-6 px-20  flex  items-center gap-12 text-[#3c3b3a] w-[100%] shadow-lg z-30 fixed top-0">
+      <header className="">
         <Link href="#home">
           <div className="flex gap-3 items-center">
             <GiCrackedAlienSkull className="text-4xl" />
@@ -49,7 +49,7 @@ const DesktopNav = () => {
           </div>
         </Link>
       </header>
-      <nav>
+      <nav className="flex justify-between items-center w-full">
         <div className="space-x-10 flex font-semibold">
           {linkArr.map((i, index) => (
             <div key={i.label} className="">
@@ -64,6 +64,9 @@ const DesktopNav = () => {
             </div>
           ))}
         </div>
+        <button className="bg-[#3c3b3a] text-white flex items-center justify-center gap-2 rounded-md h-10 w-40 font-bold">
+          Register
+        </button>
       </nav>
     </div>
   );
