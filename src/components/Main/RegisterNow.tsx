@@ -1,39 +1,41 @@
 import React from "react";
 import DayTimeline from "./Daily-timeline";
 const events = [
-    {
-      time: '09:00 AM',
-      title: 'Morning Team Standup',
-      description: 'Daily team meeting to discuss progress and plans for the day.'
-    },
-    {
-      time: '11:30 AM',
-      title: 'Client Presentation',
-      description: 'Presenting the new project proposal to the client.'
-    },
-    {
-      time: '01:00 PM',
-      title: 'Lunch Break',
-      description: 'Time to recharge and have a healthy meal.'
-    },
-    {
-      time: '02:30 PM',
-      title: 'Design Review',
-      description: 'Reviewing the latest UI designs with the design team.'
-    },
-    {
-      time: '04:30 PM',
-      title: 'Code Review Session',
-      description: 'Reviewing and merging pull requests with the development team.'
-    }
-  ]
+  {
+    time: "09:00 AM",
+    title: "Morning Team Standup",
+    description:
+      "Daily team meeting to discuss progress and plans for the day.",
+  },
+  {
+    time: "11:30 AM",
+    title: "Client Presentation",
+    description: "Presenting the new project proposal to the client.",
+  },
+  {
+    time: "01:00 PM",
+    title: "Lunch Break",
+    description: "Time to recharge and have a healthy meal.",
+  },
+  {
+    time: "02:30 PM",
+    title: "Design Review",
+    description: "Reviewing the latest UI designs with the design team.",
+  },
+  {
+    time: "04:30 PM",
+    title: "Code Review Session",
+    description:
+      "Reviewing and merging pull requests with the development team.",
+  },
+];
 
 const RegisterNow = () => {
   return (
-    <section className="px-20 py-16 space-y-10 bg-[#F5F4E2] text-[#3c3b3a]">
-      <h1 className="text-5xl font-black">Timeline</h1>
-      <div className="  flex gap-10 items-start font-brush  bg-[#F5F4E2]">
-        <div className="w-[50%] space-y-4">
+    <section className="px-4 md:px-20 py-16 space-y-10 bg-[#F5F4E2] text-[#3c3b3a]">
+      <h1 className="text-3xl md:text-5xl font-black">Timeline</h1>
+      <div className="flex md:flex-row flex-col gap-10 items-start font-brush  bg-[#F5F4E2]">
+        <div className="md:w-[50%] lg:sticky lg:top-32 space-y-4">
           <h1 className="font-bold text-2xl">
             Don’t let this chance to learn, grow and create pass you by.
             Register for the hackaholics today and let’s build.

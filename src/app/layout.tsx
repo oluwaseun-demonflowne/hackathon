@@ -3,6 +3,8 @@ import "./globals.css";
 import DesktopNav from "@/components/navigation/DesktopNav";
 import { Open_Sans } from "next/font/google";
 import localFont from "next/font/local";
+import Footer from "@/components/Main/Footer";
+import MobileNav from "@/components/navigation/MobileNav";
 
 const Monte = Open_Sans({ subsets: ["latin"] });
 const brush = localFont({
@@ -23,8 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${Monte.className} ${brush.variable}`}>
-        <DesktopNav />
+        <div>
+          <DesktopNav />
+          <MobileNav />
+        </div>
         {children}
+        <Footer />
       </body>
     </html>
   );

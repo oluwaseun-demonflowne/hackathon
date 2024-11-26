@@ -41,8 +41,8 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <div id="faq" className="px-20 space-y-5 text-[#3c3b3a] font-brush py-10 bg-[#F5F4E2]">
-      <h1 className="font-black text-6xl">Frequently asked question</h1>
+    <div id="faq" className="px-4 md:px-20 space-y-5 text-[#3c3b3a] font-brush py-10 bg-[#F5F4E2]">
+      <h1 className="font-black text-3xl md:text-6xl">Frequently asked question</h1>
       <Accordion className=" " type="single" collapsible>
         {faqs.map((faq) => (
           <AccordionItem key={faq.id} value={faq.id}>

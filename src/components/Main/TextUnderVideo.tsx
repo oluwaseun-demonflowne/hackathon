@@ -2,13 +2,13 @@ import React from "react";
 
 const TextUnderVideo = () => {
   return (
-    <div className="text-[#3c3b3a] flex items-start px-20 bg-[#F5F4E2]">
-      <div className="w-[50%] px-20 ">
+    <div className="text-[#3c3b3a] flex space-y-4 md:flex-row flex-col items-start px-4 md:px-20 bg-[#F5F4E2]">
+      <div className="md:w-[50%] md:px-20 ">
         <h1 className="text-3xl font-bold">
           A new horizon for innovation and creativity at Wellspring
         </h1>
       </div>
-      <div className="w-[50%] space-y-6">
+      <div className="md:w-[50%] space-y-6">
         <p className="font-black text-lg tracking-wide opacity-80">
           The Wellspring Hackathon opens the door to limitless opportunities,
           offering a chance to transform your ideas into groundbreaking

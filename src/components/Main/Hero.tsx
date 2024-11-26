@@ -4,9 +4,12 @@ import { SlCalender } from "react-icons/sl";
 import { GiCash } from "react-icons/gi";
 const Hero = () => {
   return (
-    <section id="home" className="bg-[#F5F4E2] pt-10 items-center w-[100%] gap-10 px-20 overflow-hidden h-screen flex text-[#3c3b3a]">
-      <div className="w-[40%] font-brush space-y-6">
-        <h1 className="text-5xl font-black">
+    <section
+      id="home"
+      className="bg-[#F5F4E2] pt-32 md:pt-10 items-center w-[100%] gap-10 px-4 md:px-20 overflow-hidden h-screen flex md:flex-row flex-col text-[#3c3b3a]"
+    >
+      <div className="md:w-[40%] font-brush space-y-6">
+        <h1 className=" text-3xl md:text-5xl font-black">
           Wellspring University Hackathon: Where brilliance meets innovation!
         </h1>
         <p className="text-[15px]">
@@ -23,7 +26,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="w-[60%] rounded-2xl overflow-hidden">
+      <div className="md:w-[60%] rounded-2xl overflow-hidden">
         <Video
           autoPlay
           muted
