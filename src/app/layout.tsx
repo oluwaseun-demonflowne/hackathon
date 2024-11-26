@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import DesktopNav from "@/components/navigation/DesktopNav";
+import { Open_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
+const Monte = Open_Sans({ subsets: ["latin"] });
+const brush = localFont({
+  src: "../fonts/FontMesa - Regular.otf",
+  variable: "--brush",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={``}
-      >
+      <body className={`${Monte.className} ${brush.variable}`}>
+        <DesktopNav />
         {children}
       </body>
     </html>
