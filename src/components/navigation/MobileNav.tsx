@@ -8,8 +8,6 @@ import { GiCrackedAlienSkull } from "react-icons/gi";
 import { useInView } from "react-intersection-observer";
 import { linkArr } from "./DesktopNav";
 
-
-
 const MobileNav = () => {
   const getCurrent = usePathname();
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -162,6 +160,16 @@ const MobileNav = () => {
             ></p>
           </div>
         ))}
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSf4U9K0QXmv1vR_ePgKYcW9_rwfeyfhQeKjl8E3U4s_RqGeUA/viewform?pli=1">
+          <button className="bg-[#3c3b3a] text-white hover:text-[#3c3b3a] button-58 flex items-center justify-center gap-2 rounded-md h-12 w-40 font-bold">
+            <div>
+              <p>Register</p>
+            </div>
+            <div>
+              <p>Register</p>
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   );

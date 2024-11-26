@@ -40,7 +40,7 @@ const DesktopNav = () => {
     });
   }, []);
   return (
-    <div className="bg-white hidden py-6 px-20  md:flex  items-center gap-12 text-[#3c3b3a] w-[100%] shadow-lg z-30 fixed top-0">
+    <div className="bg-white hidden py-3 px-20  md:flex  items-center gap-12 text-[#3c3b3a] w-[100%] shadow-lg z-30 fixed top-0">
       <header className="">
         <Link href="#home">
           <div className="flex gap-3 items-center">
