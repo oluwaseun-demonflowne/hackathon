@@ -4,14 +4,13 @@ import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { FaPause, FaPlay } from "react-icons/fa6";
-import Video from "next-video";
 
 gsap.registerPlugin(ScrollTrigger);
 const Videos = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlay, setIsPlay] = useState(true);
+  const [isPlay, setIsPlay] = useState(false);
   useGSAP(() => {
-    gsap.to("#videos", {
+    gsap.to("#video", {
       scrollTrigger: {
         trigger: document.documentElement,
         scrub: true,
@@ -22,18 +21,23 @@ const Videos = () => {
       opacity: 1,
       borderRadius: "100px",
       ease: "power1.in",
+      onStart: () => {
+        setIsPlay(true);
+        videoRef.current?.play();
+      },
     });
 
     gsap.to("#videoCon", {
       scrollTrigger: {
         trigger: document.documentElement,
         scrub: true,
-        start: "600px bottom",
-        end: "bottom+=200px bottom",
+        start: "400px bottom",
+        end: "bottom+=400px bottom",
       },
+      duration: 0.4,
       //   clipPath: `inset(7%)`,
-      paddingLeft: window.innerWidth > 760 ? "80px" : "25px",
-      paddingRight: window.innerWidth > 760 ? "80px" : "25px",
+      paddingLeft: window.innerWidth > 760 ? "170px" : "25px",
+      paddingRight: window.innerWidth > 760 ? "170px" : "25px",
       opacity: 1,
       //   borderRadius: "100px",
       ease: "power1.in",
@@ -51,17 +55,19 @@ const Videos = () => {
   };
 
   return (
-    <div id="video" className="overflow-hidden bg-[#F5F4E2]">
+    <div className="">
       <div id="videoCon" className="py-20 px-0">
-        <div className="relative videoCon">
-          <Video
-          className="videos"
+        <div className="relative">
+          <video
+            id="video"
             ref={videoRef}
-            controls={false}
-            autoPlay
+            playsInline
+            className=" w-[100%] rounded-none "
             muted
-            src="https://utfs.io/f/grKbXE59oIDeHIzCrAtvp1VhPxFgZyqDmKrWs9CTYABv6ik7"
-          />
+            loop
+          >
+            <source src="/hack.mp4" type="video/mp4" />
+          </video>
           <div
             onClick={() => changeVideoState()}
             className="bg-white right-8 p-3 hover:opacity-70 rounded-full text-2xl cursor-pointer bottom-8  absolute"

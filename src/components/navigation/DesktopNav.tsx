@@ -40,7 +40,7 @@ const DesktopNav = () => {
     });
   }, []);
   return (
-    <div className="bg-[#F5F4E2] hidden py-6 px-20  md:flex  items-center gap-12 text-[#3c3b3a] w-[100%] shadow-lg z-30 fixed top-0">
+    <div className="bg-white hidden py-6 px-20  md:flex  items-center gap-12 text-[#3c3b3a] w-[100%] shadow-lg z-30 fixed top-0">
       <header className="">
         <Link href="#home">
           <div className="flex gap-3 items-center">
@@ -64,9 +64,19 @@ const DesktopNav = () => {
             </div>
           ))}
         </div>
-        <button className="bg-[#3c3b3a] text-white flex items-center justify-center gap-2 rounded-md h-10 w-40 font-bold">
-          Register
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSf4U9K0QXmv1vR_ePgKYcW9_rwfeyfhQeKjl8E3U4s_RqGeUA/viewform?pli=1">
+        <button className="bg-[#3c3b3a] text-white hover:text-[#3c3b3a] button-58 flex items-center justify-center gap-2 rounded-md h-10 w-40 font-bold">
+          <div>
+            <p>Register</p>
+          </div>
+          <div>
+            <p>Register</p>
+          </div>
         </button>
+        </Link>
+        {/* <button className="border hover:border-0 button-58 rounded-md text-white px-5 h-12">
+            
+          </button> */}
       </nav>
     </div>
   );

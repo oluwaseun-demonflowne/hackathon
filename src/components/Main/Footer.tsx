@@ -17,7 +17,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F5F4E2] px-4 md:px-20 text-[#3c3b3a] py-16">
+    <footer className="bg-white px-4 md:px-20 text-[#3c3b3a] py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-6">
@@ -151,13 +151,14 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 text-[#6B705C] mt-1" />
                 <span>
-                L.G.A, Irhirhi Rd, off Airport Road, Oka, Benin City 300102, Edo
+                  L.G.A, Irhirhi Rd, off Airport Road, Oka, Benin City 300102,
+                  Edo
                 </span>
               </li>
             </ul>
             <div className="pt-4">
               <Link
-                href="/register"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf4U9K0QXmv1vR_ePgKYcW9_rwfeyfhQeKjl8E3U4s_RqGeUA/viewform?pli=1"
                 className="bg-[#6B705C] text-white px-6 py-3 rounded-full inline-flex items-center hover:bg-[#3c3b3a] transition-colors"
               >
                 Register Now

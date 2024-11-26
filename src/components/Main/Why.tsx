@@ -5,7 +5,7 @@ import { LiaHammerSolid } from "react-icons/lia";
 
 const Why = () => {
   return (
-    <section id="why" className="font-brush px-4 md:px-20 space-y-16 py-40 text-[#3c3b3a] bg-[#F5F4E2]">
+    <section id="why" className="font-brush px-4 md:px-20 space-y-16 py-10 md:py-40 text-[#3c3b3a] bg-white">
       <h1 className="font-black text-3xl md:text-6xl">
         Why the Wellspring University<br></br> Hackathon is the ultimate event
         <br></br>for aspiring tech innovators.

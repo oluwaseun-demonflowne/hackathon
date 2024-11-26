@@ -32,9 +32,9 @@ const events = [
 
 const RegisterNow = () => {
   return (
-    <section className="px-4 md:px-20 py-16 space-y-10 bg-[#F5F4E2] text-[#3c3b3a]">
+    <section className="px-4 md:px-20 py-16 space-y-10 bg-white text-[#3c3b3a]">
       <h1 className="text-3xl md:text-5xl font-black">Timeline</h1>
-      <div className="flex md:flex-row flex-col gap-10 items-start font-brush  bg-[#F5F4E2]">
+      <div className="flex md:flex-row flex-col gap-10 items-start font-brush  bg-white">
         <div className="md:w-[50%] lg:sticky lg:top-32 space-y-4">
           <h1 className="font-bold text-2xl">
             Don’t let this chance to learn, grow and create pass you by.

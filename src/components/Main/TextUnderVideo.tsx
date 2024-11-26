@@ -2,7 +2,7 @@ import React from "react";
 
 const TextUnderVideo = () => {
   return (
-    <div className="text-[#3c3b3a] flex space-y-4 md:flex-row flex-col items-start px-4 md:px-20 bg-[#F5F4E2]">
+    <div className="text-[#3c3b3a] flex space-y-4 md:flex-row flex-col items-start px-4 md:px-20 bg-white">
       <div className="md:w-[50%] md:px-20 ">
         <h1 className="text-3xl font-bold">
           A new horizon for innovation and creativity at Wellspring
