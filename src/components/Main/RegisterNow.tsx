@@ -40,12 +40,14 @@ const RegisterNow = () => {
             Don’t let this chance to learn, grow and create pass you by.
             Register for the hackaholics today and let’s build.
           </h1>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSf4U9K0QXmv1vR_ePgKYcW9_rwfeyfhQeKjl8E3U4s_RqGeUA/viewform?pli=1">
           <div className="relative">
             <button className="w-44 absolute top-2 left-2 h-12 border-4 border-[#3c3b3a] rounded-lg"></button>
             <button className="bg-[#3c3b3a] z-20 text-white h-12 rounded-lg text-lg w-44 font-bold">
               Register Now
             </button>
           </div>
+          </Link>
         </div>
         <DayTimeline date="June 15, 2023" events={events} />
         {/* <div className="p-6 sm:p-10">
