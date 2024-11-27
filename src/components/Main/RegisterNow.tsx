@@ -1,5 +1,6 @@
 import React from "react";
 import DayTimeline from "./Daily-timeline";
+import Link from "next/link";
 const events = [
   {
     time: "09:00 AM",
